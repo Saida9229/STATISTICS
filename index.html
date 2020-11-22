@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+     
+</head>
+
+<header>
+
+    <div class="container">
+   
+     <nav>
+   
+      <a class="logo">
+       <img  src= "assets/logo.png"/> 
+       <span class="brand-name"><img  src= "assets/brand_name.png"/></span> 
+       
+      </a> 
+   
+   
+      <ul class="menu left">
+       <li> 
+        <a class="underlined" >Dashboard</a> 
+       </li>
+       <li> 
+        <a>Organization</a> 
+       </li>
+       <li> 
+        <a>Settings</a> 
+       </li>
+      </ul>
+      
+      <div class="user right">
+          <span>John Smith</span>
+          <img src="assets/notification.png"/>
+      </div>
+     </nav>
+   
+   
+    </div>
+
+   
+   </header>
+<div class="asidemain">
+    <aside>
+        <div class="side-bar">
+            <div class="search_toggle">
+                <img src="assets/search.png"/>
+                <img src="assets/toggle.png"/>
+            </div>
+            <ul>
+                <li>
+                    <span class="rect orange"></span>
+                    <a>Emergency Dept. Stats</a>
+                    <img class="emergency_line" src="assets/vert_line.png"/>
+                </li>
+                <li>
+                    <span class="rect pink"></span>
+                    <a>Data Access</a>
+                </li>
+                <li>
+                    <span class="rect purple"></span>
+                    <a>Human Resources</a>
+                </li>
+                <li>
+                    <span class="rect green"></span>
+                    <a>Human Capital</a>
+                </li>
+                <li>
+                    <span class="rect blue"></span>
+                    <a>Waste Management</a>
+                </li>
+            </ul>
+            <hr class="aside-line"/>
+            <div class="combination">
+                <img src="assets/shape.png"/>
+                <div class="combination_box">
+                    <span>Create your own dashboard</span>
+                    <div class="button">Get Started</div>
+                </div>
+                
+            </div>
+        </div>
+    
+    </aside>
+    
+    <main>
+        <div class="top">
+            <div class="top-left">
+                <div class="name_drpdwn">
+                    <h3>Emergency Dept. Stats  </h3>
+                    <button onclick="myFunction()" class="dropbtn">
+                        <img src="assets/arrow.png " />
+                     </button>
+                     <div id="myDropdown" class="dropdown-content">
+                         <div class="assign_color"><img src="assets/Icon1.png"/><a href="#Assign color">Assign Color</a><span></span></div>
+                         <div><img src="assets/Icon1 (2).png"/><a href="#Edit Title & Description">Edit Title & Description</a></div>
+                         <div><img src="assets/Icon1 (8).png"/><a href="#Duplicate">Duplicate</a></div>
+                         <div><img src="assets/Icon1 (7).png"/><a href="#Copy Link">Copy Link</a></div>
+                         <div><img src="assets/Icon1 (6).png"/><a href="#Save">Save</a></div>
+                         <div><img src="assets/Icon1 (5).png"/><a href="#Export">Export</a></div>
+                         <div><img src="assets/Icon1 (4).png"/><a href="#Import">Import</a></div>
+                        
+                      </div>
+                      <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                    
+                    
+                </div>
+                <h7>Insider threat is a malicious threat to an organization 
+                    that comes from people within the organization,such as employees.</h7>
+                <div class="creator_info">
+                    <p>Created by: <span>    Ed Smith   </span> | 3 July 2020 </p> 
+                    
+                </div>
+    
+            </div>
+            <div class="top-right">
+                <div class=" button">Add Widget</div>
+                <div class="update_info">
+                    <div class="refresh">
+                        <img src="assets/refresh.png"/>
+                        <div>Auto Refresh</div>
+                    </div>
+                    <div class="update">
+                        <img src="assets/update.png"/>
+                        <div>Last updated: 2 mins ago</div>
+                    </div>
+                    <div class="calendar">
+                        <img src="assets/calendar.png"/>
+                        <div class="calendar_info"> <span>Last 1 month</span> </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <hr class="top-line"></hr>
+        <figure class="highcharts-figure">
+            <div id="container1"></div>
+            
+            
+            <div class="map">
+                <div class="map-info">
+                    <span>Admissions</span>
+                    <div class="lowhigh">
+                        <img src="assets/icon (1).png"/>
+                        Low
+                        <img src="assets/icon (2).png"/>
+                        High
+                    </div>
+                </div>
+                <img src="assets/map.png"/>
+            </div>
+            <div class="half-circle">
+                <div> Daily Task Management</div>
+                <img src="assets/progress.png"/>
+            </div>
+            
+        </figure>
+        <div class="figure-info">
+            <div class="text-simple">
+                <span>Total visitors today</span><br>
+                <div class = "num">53,122</div>
+                <div class="figure-info-percent">
+                    <img src="assets/triangle.png"/>
+                    <span>25%</span>
+                </div>
+            </div>
+            <div class="text-simple">
+                <span>Users leaving emergency</span><br>
+                <div class = "num">44,667</div>
+                <div class="figure-info-percent">
+                    <img src="assets/triangle.png"/>
+                    <span>30%</span>
+                </div>
+            </div>
+            <div class="text-colored">
+                <span class="critic">Critical cases</span><br>
+                <div class = "num">10,657</div>
+                <div class="figure-info-percent">
+                    <img src="assets/triangle.png"/>
+                    <span>25%</span>
+                </div>
+            </div>
+            <div class="text-simple">
+                <span>Quarantine patients</span><br>
+                <div class = "num">4,556</div>
+                <div class="figure-info-percent">
+                    <img src="assets/triangle.png"/>
+                    <span>30%</span>
+                </div>
+            </div>
+            
+        </div>
+        <figure class="highcharts-line">
+            <div id="container2"></div>
+            <div id="container3"></div>
+            
+            <script src="./app.js"></script>
+        </figure>
+        
+    
+        
+        
+        
+        
+        
+    </main>
+</div>
+
+
+</html>
